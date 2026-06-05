@@ -1,5 +1,6 @@
 import gimnasia.*
-
+import persona.*
+import clubes.*
 describe "rutinas" {
 
 //Punto 1: rutinas
