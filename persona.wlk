@@ -1,11 +1,11 @@
 class Persona{
     var property peso
     method realizarRutina(rutina){
-        peso = (peso - self.cantCaloriasPerdidasPorRutina(rutina)).truncate(3)
+        peso = peso - self.cantCaloriasPerdidasPorRutina(rutina)
     }
 
     method cantCaloriasPerdidasPorRutina(rutina){
-        return  rutina.calcularCalorias(self.tiempoDePractica()) / self.kilosPorCaloriasQuePierde()
+        return rutina.calcularCalorias(self.tiempoDePractica()) / self.kilosPorCaloriasQuePierde()
     }
     method tiempoDePractica()
     method kilosPorCaloriasQuePierde()
